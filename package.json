@@ -1,0 +1,27 @@
+{
+  "name": "boka",
+  "version": "1.0.0",
+  "description": "Book reading list",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rhill13/boka.git"
+  },
+  "author": "Ryan Hill",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rhill13/boka/issues"
+  },
+  "homepage": "https://github.com/rhill13/boka#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  }
+}
