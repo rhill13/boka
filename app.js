@@ -1,6 +1,7 @@
 // Imports
 const express = require("express");
 const bodyParser = require("body-parser");
+const path = require("path");
 
 const listRouter = require("./routes/list-routes");
 
@@ -13,7 +14,7 @@ app.set("views", "./views");
 
 // Middleware
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static("public"));
+app.use(express.static(path.join(__dirname, "public")));
 
 // Routes
 app.use(listRouter);
