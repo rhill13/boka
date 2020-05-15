@@ -1,3 +1,3 @@
 exports.getList = (req, res, next) => {
-  res.send("<h2>Boka</h2>");
+  res.render("index", { pageTitle: "Boka - Home" });
 };
