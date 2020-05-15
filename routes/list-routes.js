@@ -2,8 +2,8 @@ const express = require("express");
 
 const router = express.Router();
 
-router.get("/", (req, res, next) => {
-  res.send("<h2>Working...</h2>");
-});
+const listController = require("../controllers/list-controller");
+
+router.get("/", listController.getList);
 
 module.exports = router;
