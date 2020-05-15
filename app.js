@@ -8,6 +8,8 @@ const PORT_NUM = 3000;
 
 // Setup
 const app = express();
+app.set("view engine", "ejs");
+app.set("views", "./views");
 
 // Middleware
 app.use(bodyParser.urlencoded({ extended: true }));
