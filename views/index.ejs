@@ -1,5 +1,31 @@
-<%- include('./includes/head') %>
+<%- include('./includes/head') %> <%- include('./includes/nav') %>
 
-<h1>Boka - From EJS</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-md-2 col-lg-4"></div>
+    <div class="col-sm-12 col-md-8 col-lg-4">
+      <ul class="list-group">
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col-10">Lord of the Rings</div>
+            <div class="col-2">
+              <button data-toggle="collapse" data-target="#demo" class="btn">
+                <i class="fas fa-angle-down"></i>
+              </button>
+            </div>
+          </div>
+          <div id="demo" class="collapse">
+            Test
+          </div>
+        </li>
+        <li class="list-group-item">The Odyssey</li>
+        <li class="list-group-item">Paradise Lost</li>
+        <li class="list-group-item">Confessions</li>
+        <li class="list-group-item">The Old Man and the Sea</li>
+      </ul>
+    </div>
+    <div class="col-md-2 col-lg-4"></div>
+  </div>
+</div>
 
 <%- include('./includes/end') %>
