@@ -1,9 +1,28 @@
+body {
+  background-color: #e9e9e9;
+}
+
 .list-group-item {
   margin-top: 0.4rem;
   background-color: #808080;
-  color: #f7f7f7;
+  color: #ffffff;
 }
 
 .list-group-item:hover {
   background-color: #5e5e5e;
+}
+
+.no-books-header {
+  margin-top: 2rem;
+}
+
+.author-name {
+  color: #cccccc;
+}
+
+.to-read-header {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
 }

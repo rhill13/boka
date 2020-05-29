@@ -2,29 +2,39 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-md-2 col-lg-4"></div>
-    <div class="col-sm-12 col-md-8 col-lg-4">
+    <div class="col-md-1"></div>
+    <div class="col-sm-12 col-md-10">
+      <% if(bookList.length > 0) { %> <% for(let book of bookList) { %>
+      <div class="to-read-header">
+        <h4 class="text-primary">To Read</h4>
+      </div>
       <ul class="list-group">
         <li class="list-group-item">
           <div class="row">
-            <div class="col-10">Lord of the Rings</div>
+            <div class="col-10">
+              <%= book.bookTitle %>
+              <small class="author-name">| <i><%= book.bookAuthor %></i></small>
+            </div>
             <div class="col-2">
-              <button data-toggle="collapse" data-target="#demo" class="btn">
+              <button
+                data-toggle="collapse"
+                data-target="#<%= book.bookTitle %>"
+                class="btn"
+              >
                 <i class="fas fa-angle-down"></i>
               </button>
             </div>
           </div>
-          <div id="demo" class="collapse">
-            Test
+          <div id="<%= book.bookTitle %>" class="collapse">
+            <a href="#" class="btn btn-primary btn-sm">Delete</a>
           </div>
         </li>
-        <li class="list-group-item">The Odyssey</li>
-        <li class="list-group-item">Paradise Lost</li>
-        <li class="list-group-item">Confessions</li>
-        <li class="list-group-item">The Old Man and the Sea</li>
       </ul>
+      <% } %> <% } else { %>
+      <h4 class="display-4 no-books-header">No books in list!</h4>
+      <% } %>
     </div>
-    <div class="col-md-2 col-lg-4"></div>
+    <div class="col-md-1"></div>
   </div>
 </div>
 
